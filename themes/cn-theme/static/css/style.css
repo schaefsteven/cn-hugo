@@ -1,0 +1,9 @@
+body{
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+header, footer {
+    border: 1px dashed grey;
+}

@@ -1,0 +1,6 @@
+{{ define "main" }}
+    <p>-- default list layout --</p>
+    {{ range .Pages }}
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+    {{ end }}
+{{ end }}
