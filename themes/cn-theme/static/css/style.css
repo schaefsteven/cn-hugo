@@ -1,9 +1,78 @@
+:root {
+    --main-bg-color: hsla(2, 0%, 15%, 0.60);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     color: white;
-    background-color: black;
     text-align: center;
+    font-family: 'Roboto Slab', serif;
 }
 
 header, footer {
-    border: 1px dashed grey;
+    background-color: var(--main-bg-color);
+}
+
+body{
+    background-color: black;
+    background-attachment: fixed;
+    background-image: url("../images/bg01-gradient-1440-comp75.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+
+.main-logo {
+    max-width: 90%;
+    max-height: 70%;
+}
+
+.main-logo-wrapper {
+    height: 75vh;
+    height: 75svh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.big-heading {
+    font-size: 2rem;
+    font-family: 'Staatliches', sans;
+}
+
+.trans-bg {
+    background-color: var(--main-bg-color);
+}
+
+.main-wrapper {
+    margin: 0rem 0.25rem;
+    border-radius: 0.5rem; 
+    padding: 1rem;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-button {
+    text-decoration: none;
+    padding: 1rem 0.5rem;
+}
+
+a {
+    color: white;
+}
+
+.main-logo-wrapper .icon {
+    filter: invert(100%) opacity(40%);
+    max-height: 2rem;
+}
+
+.main-logo-wrapper .icon > img {
+    max-width: 4.5rem;
 }
