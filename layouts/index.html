@@ -7,14 +7,17 @@
         <section id="WhatsNew">
             <h2 class="big-heading">What's New?</h2>
             <section id="TikTok">
-                <h3>TikTok @cnbandmi</h3>
                 <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@cnbandmi" data-unique-id="cnbandmi" data-embed-type="creator" style="max-width: 780px; min-width: 288px;" > <section> <a target="_blank" href="https://www.tiktok.com/@cnbandmi?refer=creator_embed">@cnbandmi</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
             </section>
             <section id="LatestRelease">
-                <p>latest music release here</p>
+                <iframe style="border: 0; width: 350px; height: 753px;" src="https://bandcamp.com/EmbeddedPlayer/album=1465099326/size=large/bgcol=303333/linkcol=307433/transparent=true/" seamless><a href="https://commonnonsensemi.bandcamp.com/album/best-advice">Best Advice by Common Nonsense</a></iframe>
             </section>
             <section id="LatestBlog">
-                <p>latest blog post here</p>
+                {{ range first 1 (where .Site.RegularPages "Section" "blogs") }}
+                    <a href="{{ .RelPermalink }}"><h3 class="section-title">{{ .Title }}</h3></a>
+                    <p class="summary">{{ .Summary }}</p>
+                    <a class="read-more" href="{{ .RelPermalink }}">read more</a>
+                {{ end }}
             </section>
         </section>
     </div>

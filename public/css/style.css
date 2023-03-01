@@ -49,9 +49,13 @@ body{
 }
 
 .main-wrapper {
-    margin: 0rem 0.25rem;
+    margin: 0.5rem 0.25rem;
     border-radius: 0.5rem; 
     padding: 1rem;
+}
+
+header {
+    margin-bottom: 1.5rem;
 }
 
 .header-nav {
@@ -75,4 +79,35 @@ a {
 
 .main-logo-wrapper .icon > img {
     max-width: 4.5rem;
+}
+
+#WhatsNew > section {
+    border-bottom: 2px solid grey;
+    padding-bottom: 1em; 
+}
+
+.section-title {
+    font-size: 1.25em;
+    font-weight: bold;
+    margin: 1em 0em; 
+}
+
+.summary {
+    text-align: left;
+    line-height: 1.5em; 
+}
+
+.read-more {
+    padding-top: 1em;
+    display: block;
+}
+
+.social-link {
+    display: block;
+    margin-bottom: 1em;
+    border: 2px solid grey;
+    border-radius: 0.5em;
+    text-decoration: none;
+    font-size: 1.5em;
+    padding: 1em;
 }

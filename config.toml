@@ -1,4 +1,6 @@
 baseURL = 'http://example.org/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
-theme = 'cn-theme'
+
+[markup.goldmark.renderer]
+unsafe = true
