@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{{"<!-- layouts/_default/baseof.html -->" | safeHTML }}
 <html>
     {{- partial "head.html" . -}}
     <body>
@@ -6,7 +7,10 @@
             {{- partial "header.html" . -}}
         </header>
         <main>
-            {{- block "main" . }}{{- end }}
+            {{- block "pre-main" . }}{{- end }}
+            <div class="main-wrapper trans-bg">
+                {{- block "main" . }}{{- end }}
+            </div>
         </main>
         <footer>
             {{- partial "footer.html" . -}}

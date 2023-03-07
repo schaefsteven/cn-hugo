@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- layouts/_default/baseof.html -->
 <html><head>
     <title></title>
     <meta charset="UTF-8">
@@ -9,24 +10,29 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500&family=Staatliches&display=swap" rel="stylesheet">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
 </head>
 <body>
         <header><nav class="header-nav">
-    <a class="nav-button" href="">Listen</a>
-    <a class="nav-button" href="/follow-us">Follow Us</a>
-    <a class="nav-button" href="/blogs">Blog</a>
-    <a class="nav-button" href="">(ham)</a>
+    <ul>
+        <li><a class="nav-button" href="/">Home</a></li>
+        <li><a class="nav-button" href="/discography">Listen</a></li>
+        <li><a class="nav-button" href="/blog">Blog</a></li>
+        <li><a class="nav-button" href="/links">Follow Us</a></li>
+    </ul>
 </nav>
 </header>
         <main>
-    <p>-- default list layout --</p>
+            <div class="main-wrapper trans-bg">
+    <!-- layouts/_default/list.html-->
     <ul>
         
     </ul>
 
+            </div>
         </main>
-        <footer><p>-- default footer --</p>
-<a href="/">Home</a>
+        <footer>This site was created by <a href="/">Steven Schaefer</a>
 </footer>
     </body>
 </html>

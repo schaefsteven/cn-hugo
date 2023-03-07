@@ -1,0 +1,6 @@
+{{ define "main" }}
+    {{"<!-- layouts/discography/list.html -->" | safeHTML }}
+    {{ range .Pages }}
+        {{ partial "album-listable.html" . }}
+    {{ end }}
+{{ end }}

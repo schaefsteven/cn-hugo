@@ -1,0 +1,30 @@
+<div class="listable">
+    <a href="{{ .RelPermalink }}">
+        <div class="img-overlay-wrapper">
+            <!-- Album art -->
+            {{ with .Resources.GetMatch "album-art*" }}
+                <img src="{{ .RelPermalink }}" alt="album art">
+            {{ end }}
+            <div class="img-overlay">
+                <!-- Title -->
+                <h3 class="big-heading img-center-bottom">{{ .Title }}</h3>
+                <!-- Release Date -->
+                {{ with .Params.releaseDate }}
+                <p>Released: {{ time.Format ":date_long" . }}</p>
+                {{ end }}
+            </div>
+        </div>
+    </a>
+    <!-- Bandcamp Player -->
+    {{ with .Resources.GetMatch "player.html" }}
+        {{ .Content }}
+    {{ end }}
+    <!-- Blog Post -->
+    <!--
+    {{ with .Params.blogPost }}
+        {{ with site.GetPage (printf "%s" .) }}
+        <p class="summary">{{ .Summary }}</p>
+        {{ end }}
+    {{ end }}
+    -->
+</div>

@@ -1,0 +1,5 @@
+{{ define "main" }}
+    {{ range .Pages }}
+        <a class="social-link" href="{{ .Params.link }}" target="_blank">{{ .Title }}</a>
+    {{ end }}
+{{ end }}

@@ -2,12 +2,39 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://example.org/follow-us/</loc>
+    <loc>http://example.org/blog/blog-with-pics/</loc>
+    <lastmod>2023-03-01T09:52:19-06:00</lastmod>
+  </url><url>
+    <loc>http://example.org/blog/</loc>
+    <lastmod>2023-03-01T09:52:19-06:00</lastmod>
+  </url><url>
+    <loc>http://example.org/</loc>
+    <lastmod>2023-03-01T09:52:19-06:00</lastmod>
+  </url><url>
+    <loc>http://example.org/blog/blog-2/</loc>
+    <lastmod>2023-02-27T11:56:26-06:00</lastmod>
+  </url><url>
+    <loc>http://example.org/blog/blog-1/</loc>
+    <lastmod>2023-02-01T09:52:19-06:00</lastmod>
+  </url><url>
+    <loc>http://example.org/discography/best-advice/</loc>
   </url><url>
     <loc>http://example.org/categories/</loc>
   </url><url>
-    <loc>http://example.org/</loc>
+    <loc>http://example.org/discography/</loc>
+  </url><url>
+    <loc>http://example.org/links/</loc>
+  </url><url>
+    <loc>http://example.org/links/spotify/</loc>
   </url><url>
     <loc>http://example.org/tags/</loc>
+  </url><url>
+    <loc>http://example.org/discography/the-more-you-know/</loc>
+  </url><url>
+    <loc>http://example.org/links/tiktok/</loc>
+  </url><url>
+    <loc>http://example.org/discography/time-ran-out/</loc>
+  </url><url>
+    <loc>http://example.org/links/youtube/</loc>
   </url>
 </urlset>

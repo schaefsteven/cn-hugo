@@ -1,5 +1,5 @@
 {{ define "main" }}
-    <p>-- default list layout --</p>
+    {{"<!-- layouts/_default/list.html-->" | safeHTML }}
     <ul>
         {{ range .Pages }}
             <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>

@@ -1,4 +1,5 @@
 {{ define "main" }}
+    {{"<!-- layouts/discography/single.html -->" | safeHTML }}
     <h1 class="big-heading">{{ .Title }}</h1>
     <img src="{{ .Resources.GetMatch "album-art*" }}" alt="album art">
 

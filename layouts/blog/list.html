@@ -1,6 +1,7 @@
 {{ define "main" }}
+    {{"<!-- layouts/blog/list.html-->" | safeHTML }}
     <h1 class="big-heading">Common Nonsense Blog</h1>
-    <section class="trans-bg main-wrapper">
+    <section>
         {{ range .Pages }}
             <a href="{{ .RelPermalink }}"><h2 class="section-title">{{ .Title }}</h2></a>
             <p class="summary">{{ .Summary }}</p>

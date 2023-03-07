@@ -1,0 +1,14 @@
+<div class="listable blog-listable">
+    <a href="{{ .RelPermalink }}">
+        <div class="img-overlay-wrapper">
+            {{ range first 1 (.Resources.Match "*featured*" | default (.Resources.ByType "image")) }}
+                <img src="{{ .RelPermalink }}" alt="">
+            {{ end }}
+            <div class="img-overlay">
+                <h3 class="big-heading">{{ .Title }}</h3>
+            </div>
+        </div>
+    </a>
+    <p class="summary">{{ .Summary }} ... <a href="{{ .RelPermalink }}">read more</a></p>
+</div>
+
