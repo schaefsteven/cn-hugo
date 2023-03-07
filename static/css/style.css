@@ -144,12 +144,12 @@ header {
     margin: 0.25em 0em;
     display: flex;
     justify-content: space-around;
-    overflow: scroll;
 }
 
 @media screen and (max-width: 300px) {
     .header-nav ul {
         justify-content: left;
+        overflow: scroll;
     }
 }
 
