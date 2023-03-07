@@ -9,6 +9,6 @@
             </div>
         </div>
     </a>
-    <p class="summary">{{ .Summary }} ... <a href="{{ .RelPermalink }}">read more</a></p>
+    <div class="summary">{{ .Summary | markdownify  }} ... <a href="{{ .RelPermalink }}">read more</a></div>
 </div>
 
