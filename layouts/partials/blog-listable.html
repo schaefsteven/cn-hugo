@@ -9,6 +9,11 @@
             </div>
         </div>
     </a>
-    <div class="summary">{{ .Summary | markdownify  }} ... <a href="{{ .RelPermalink }}">read more</a></div>
+    <div class="summary">
+        {{ .Content | truncate 700 }}
+        <div class="read-more">
+            <a href="{{ .RelPermalink }}">read more</a>
+        </div>
+    </div>
 </div>
 
