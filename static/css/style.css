@@ -7,6 +7,7 @@
     --accent-main-dark: #188177;
     
     --primary-header-font: 'Overpass', sans-serif;
+    --primary-body-font: 'Roboto Slab', serif;
 }
 
 
@@ -23,7 +24,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: 'Roboto Slab', serif;
+    font-family: var(--primary-body-font);
     min-width: 200px;
     min-height: 100svh;
     padding-top: 48px; /*space for fixed-position header*/
@@ -110,6 +111,13 @@ body {
     font-family: var(--primary-header-font);
     margin-bottom: 1rem;
 }
+
+.small-heading {
+    font-size: 1.5rem;
+    font-family: var(--primary-body-font);
+    margin-bottom: 1rem;
+}
+
 
 .bc-player {
     max-width: 650px;

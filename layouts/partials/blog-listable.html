@@ -1,9 +1,16 @@
 <div class="listable blog-listable">
     <a href="{{ .RelPermalink }}">
         <div class="img-overlay-wrapper">
-            {{ range first 1 (.Resources.Match "*featured*" | default (.Resources.ByType "image")) }}
-                <img src="{{ .RelPermalink }}" alt="">
-            {{ end }}
+            <!-- Choses an image based on these preferences:
+                a) from the blog post and has "featured" in the filename
+                b) from the blog post, any images
+                c) the default blog image stored in the /assets directory
+            -->
+            {{ $imgNamedFeatured := index (.Resources.Match "*featured*") 0 }}
+            {{ $imgFromBlog := index (.Resources.ByType "image") 0 }}
+            {{ $imgDefault := resources.Get "/images/default-blog-image.jpg" }}
+            {{ $img := (($imgNamedFeatured | default $imgFromBlog) | default $imgDefault) }}
+            <img src="{{ $img.RelPermalink }}" alt="">
             <div class="img-overlay">
                 <h3 class="big-heading">{{ .Title }}</h3>
             </div>
@@ -16,4 +23,3 @@
         </div>
     </div>
 </div>
-

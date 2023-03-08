@@ -4,11 +4,9 @@
 {{ end }}
 {{ define "main" }}
     {{"<!-- layouts/blog/list.html-->" | safeHTML }}
-    <section>
-        {{ range .Pages }}
-            <a href="{{ .RelPermalink }}"><h2 class="section-title">{{ .Title }}</h2></a>
-            <p class="summary">{{ .Summary }}</p>
-            <a class="read-more" href="{{ .RelPermalink }}">read more</a>
-        {{ end }}
-    </section>
+    {{ range .Pages }}
+        <section>
+            {{ partial "blog-listable" . }}
+        </section>
+    {{ end }}
 {{ end }}
