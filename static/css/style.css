@@ -2,7 +2,7 @@
 
 :root {
     --main-bg-color: hsla(2, 0%, 15%, 0.60);
-    --more-opaque-bg-color: hsla(2, 0%, 15%, 0.95);
+    --more-opaque-bg-color: hsla(2, 0%, 15%, 0.85);
     --accent-main-bright: #A0C8BF;
     --accent-main-dark: #188177;
     
@@ -87,7 +87,7 @@ body {
 .main-wrapper section {
     padding-top: 2em;
     width: 100%;
-    max-width: 500px;
+    max-width: 650px;
 }
 
 @media screen and (min-width: 900px) {
@@ -125,6 +125,40 @@ body {
 
 .tiktok-embed {
     max-width: 780px; 
+}
+
+
+.page-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    max-height: min(20vh, 25vw);
+    padding: 2rem;
+}
+
+.page-heading img {
+    height: auto;
+    width: 30%;
+    filter: drop-shadow(5px 5px 5px black);
+    z-index: -5;
+}
+
+.page-heading h1 {
+    font-size: 2.5rem;
+    font-family: var(--primary-header-font);
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-top: 0.25em;
+    filter: drop-shadow(5px 5px 5px black);
+    margin-left: 1rem;
+}
+
+@media screen and (min-width: 770px) {
+    .page-heading h1 {
+        font-size: 3.5rem;
+        margin-left: 2rem;
+    }
 }
 
 

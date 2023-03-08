@@ -1,6 +1,6 @@
 {{ define "pre-main" }}
     {{"<!-- layouts/blog/list.html-->" | safeHTML }}
-    <h1 class="big-heading">Common Nonsense Blog</h1>
+    {{ partial "page-heading.html" "Blog" }}
 {{ end }}
 {{ define "main" }}
     {{"<!-- layouts/blog/list.html-->" | safeHTML }}
