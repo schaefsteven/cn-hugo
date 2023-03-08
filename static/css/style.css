@@ -10,6 +10,7 @@
 }
 
 
+
 /* General Defaults */
 
 html {
@@ -40,8 +41,13 @@ img {
     max-width: 100%;
 }
 
+a {
+    color: white;
+}
 
-/* Main Background */
+
+
+/* Backgrounds */
 
 body {
     background-color: black;
@@ -52,18 +58,18 @@ body {
     background-position: left bottom;
 }
 
-
-/* Site-wide styles */
-
-.big-heading {
-    font-size: 1.5rem;
-    font-family: var(--primary-header-font);
-    margin-bottom: 1rem;
-}
-
 .trans-bg {
     background-color: var(--main-bg-color);
 }
+
+
+
+/* Layouts */
+
+.listable {
+    background-color: var(--main-bg-color);
+}
+
 
 .main-wrapper {
     margin: 0.5rem 1%;
@@ -77,16 +83,44 @@ body {
     justify-content: space-around;
 }
 
-
 .main-wrapper section {
     padding-top: 2em;
+    width: 100%;
+    max-width: 500px;
 }
 
-a {
-    color: white;
+@media screen and (min-width: 900px) {
+    .main-wrapper section {
+        max-width: min(45%, 650px);
+    }
 }
 
-.summary {
+@media screen and (min-width: 1500px) {
+    .main-wrapper section {
+        max-width: min(30%, 650px);
+    }
+}
+
+
+
+/* Elements */
+
+.big-heading {
+    font-size: 1.5rem;
+    font-family: var(--primary-header-font);
+    margin-bottom: 1rem;
+}
+
+.bc-player {
+    max-width: 650px;
+}
+
+.tiktok-embed {
+    max-width: 780px; 
+}
+
+
+div.summary {
     padding: 1em;
     position: relative;
     text-align: left;
@@ -98,7 +132,7 @@ a {
     display: none;
 }
 
-.read-more {
+.summary .read-more {
     padding-bottom: 1em;
     display: block;
     background: linear-gradient(to top, var(--more-opaque-bg-color) 20%, hsla(2, 0%, 15%, 0));
@@ -121,6 +155,7 @@ a {
     pointer-events: auto;
 }
 
+
 .img-overlay-wrapper {
     position: relative;
 }
@@ -137,9 +172,6 @@ a {
     align-items: flex-start;
 }
 
-.bc-player {
-    max-width: 650px;
-}
 
 
 /* Header and Footer */
@@ -184,9 +216,6 @@ header {
     }
 }
 
-header a {
-}
-
 .nav-button {
     text-decoration: none;
     display: block;
@@ -216,11 +245,13 @@ footer a {
 }
 
 
+
 /* Homepage / index.html */
 
 /* Main logo */
+
 .main-logo {
-    max-width: 90%;
+    max-width: 85%;
     max-height: 70%;
 }
 
@@ -240,34 +271,6 @@ footer a {
 
 .main-logo-wrapper .icon > img {
     max-width: 4.5rem;
-}
-
-/* Homepage Sections */
-
-.homepage-section {
-    width: 100%;
-    max-width: 500px;
-}
-
-@media screen and (min-width: 900px) {
-    .homepage-section {
-        max-width: min(45%, 650px);
-    }
-
-@media screen and (min-width: 1500px) {
-    .homepage-section {
-        max-width: min(30%, 650px);
-}
-
-/* TikTok */
-
-.tiktok-embed {
-    max-width: 780px; 
-}
-
-/* Listables */
-.listable {
-    background-color: var(--main-bg-color);
 }
 
 
