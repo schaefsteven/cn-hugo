@@ -1,5 +1,10 @@
+{{ define "pre-main" }}
+    {{ partial "page-heading.html" "Links" }}
+{{ end }}
 {{ define "main" }}
-    {{ range .Pages }}
-        <a class="social-link" href="{{ .Params.link }}" target="_blank">{{ .Title }}</a>
-    {{ end }}
+    <section class="social-links">
+        {{ range .Pages }}
+            <a href="{{ .Params.link }}" target="_blank">{{ .Title }}</a>
+        {{ end }}
+    </section>
 {{ end }}

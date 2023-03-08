@@ -1,6 +1,12 @@
+{{ define "pre-main" }}
+    {{"<!-- layouts/discography/list.html-->" | safeHTML }}
+    {{ partial "page-heading.html" "Music" }}
+{{ end }}
 {{ define "main" }}
-    {{"<!-- layouts/discography/list.html -->" | safeHTML }}
+    {{"<!-- layouts/discography/list.html-->" | safeHTML }}
     {{ range .Pages }}
-        {{ partial "album-listable.html" . }}
+        <section>
+            {{ partial "album-listable.html" . }}
+        </section>
     {{ end }}
 {{ end }}

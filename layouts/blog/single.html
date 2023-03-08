@@ -1,0 +1,8 @@
+{{ define "pre-main" }}
+    {{ partial "page-heading.html" "Blog" }}
+{{ end }}
+{{ define "main" }}
+        <article class="blog-article">
+            {{ .Content }}
+        </article>
+{{ end }}
