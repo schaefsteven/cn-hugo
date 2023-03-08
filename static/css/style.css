@@ -70,17 +70,11 @@ body {
     border-radius: 0.5rem; 
     padding: 1rem;
     padding-top: 0;
-    max-width: 1700px;
+    max-width: 1800px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-}
-
-@media screen and (min-width: 500px) {
-    .homepage-section {
-        min-width: 400px;
-    }
 }
 
 
@@ -169,7 +163,7 @@ header {
 }
 
 .header-hide {
-    top: -50px;
+    top: -55px;
 }
 
 .header-nav {
@@ -196,7 +190,7 @@ header a {
 .nav-button {
     text-decoration: none;
     display: block;
-    padding: .45em 0.25em 0.25em 0.25em;
+    padding: .50em 0.25em 0.25em 0.25em;
     border-radius: 0.25em;
     white-space: nowrap;
     overflow: hidden;
@@ -249,9 +243,20 @@ footer a {
 }
 
 /* Homepage Sections */
+
 .homepage-section {
     width: 100%;
-    max-width: 650px;
+    max-width: 500px;
+}
+
+@media screen and (min-width: 900px) {
+    .homepage-section {
+        max-width: min(45%, 650px);
+    }
+
+@media screen and (min-width: 1500px) {
+    .homepage-section {
+        max-width: min(30%, 650px);
 }
 
 /* TikTok */
