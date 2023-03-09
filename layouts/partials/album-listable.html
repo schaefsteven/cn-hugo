@@ -1,5 +1,5 @@
-<div class="listable">
-    <a href="{{ .RelPermalink }}">
+<div class="listable" id="{{ .Title }}">
+    <a href="/discography/#{{ .Title }}">
         <div class="img-overlay-wrapper">
             <!-- Album art -->
             {{ with .Resources.GetMatch "album-art*" }}

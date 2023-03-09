@@ -1,11 +1,4 @@
 {{ define "main" }}
-    {{"<!-- layouts/discography/single.html -->" | safeHTML }}
-    <h1 class="big-heading">{{ .Title }}</h1>
-    <img src="{{ .Resources.GetMatch "album-art*" }}" alt="album art">
-
-    <!-- Audio Player -->
-    {{ with .Resources.GetMatch "player.html" }}
-        {{ .Content }}
-    {{ end }}
+    {{ partial "404.html" . }}
 {{ end }}
 

@@ -2,7 +2,13 @@
     {{ partial "page-heading.html" "Blog" }}
 {{ end }}
 {{ define "main" }}
-        <article class="blog-article">
+        <article class="blog-article no-padding">
+            <div class="blog-title-wrapper">
+                <h1 class="blog-title">{{ .Title }}</h1>
+                {{ with .Date }}
+                    <span class="blog-date">Published {{ . | time.Format ":date_medium"}}</span>
+                {{ end }} 
+            </div>
             {{ .Content }}
         </article>
 {{ end }}

@@ -13,7 +13,10 @@
     {{"<!-- layouts/home.html -->" | safeHTML }}
     <section id="LatestRelease">
         <h2 class="big-heading">Latest Music</h2>
-        {{ range first 1 (where .Site.RegularPages "Section" "discography") }}
+        <!-- Grab the dicography section -->
+        {{ $Discog := (where .Site.RegularPages "Section" "discography") }}
+        <!-- Sort by reverse release date -->
+        {{ range first 1 ($Discog.ByParam "releaseDate").Reverse  }}
             {{ partial "album-listable" . }}
         {{ end }}
     </section>
