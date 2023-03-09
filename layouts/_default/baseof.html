@@ -8,9 +8,8 @@
         </header>
         <main>
             {{- block "pre-main" . }}{{- end }}
-            <div class="main-wrapper trans-bg" id="MainWrapper">
-                {{- block "main" . }}{{- end }}
-            </div>
+            <div class="main-wrapper trans-bg" id="MainWrapper">{{- block "main" . }}{{- end }}</div>
+            {{- block "main-no-wrapper" . }}{{- end }}
         </main>
         <footer>
             {{- partial "footer.html" . -}}

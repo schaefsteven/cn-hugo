@@ -63,6 +63,10 @@ body {
     background-color: var(--main-bg-color);
 }
 
+.darker-bg {
+    background-color: var(--more-opaque-bg-color);
+}
+
 
 
 /* Layouts */
@@ -85,8 +89,11 @@ body {
     overflow: clip;
 }
 
-.main-wrapper:has(.no-padding) {
-    padding: 0;
+/*hides the extra main-wrapper when using a hugo "main-no-wrapper" block. This
+ * was done in order to fix the padding issues on the blog single. Could be 
+ * improved probably. */
+.main-wrapper:empty {
+    display: none;
 }
 
 .main-wrapper section {
@@ -347,7 +354,6 @@ footer a {
     text-align: left;
     width: 100%;
     max-width: 800px;
-    background-color: var(--main-bg-color);
     padding: 1em;
 }
 

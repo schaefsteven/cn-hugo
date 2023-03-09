@@ -1,8 +1,9 @@
 {{ define "pre-main" }}
     {{ partial "page-heading.html" "Blog" }}
 {{ end }}
-{{ define "main" }}
-        <article class="blog-article no-padding">
+{{ define "main-no-wrapper" }}
+    <div class="main-wrapper darker-bg">
+        <article class="blog-article">
             <div class="blog-title-wrapper">
                 <h1 class="blog-title">{{ .Title }}</h1>
                 {{ with .Date }}
@@ -11,4 +12,5 @@
             </div>
             {{ .Content }}
         </article>
+    </div>
 {{ end }}
