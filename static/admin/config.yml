@@ -16,5 +16,8 @@ collections:
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'links'
+    label: 'Links'
+    folder: 'content/
       
 # Todo: implement relative media storage via https://github.com/decaporg/decap-cms/issues/1472#issuecomment-503584397

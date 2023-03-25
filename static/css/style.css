@@ -87,6 +87,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
     overflow: clip;
+    z-index: 1;
 }
 
 /*hides the extra main-wrapper when using a hugo "main-no-wrapper" block. This
@@ -153,7 +154,6 @@ body {
     height: auto;
     width: 30%;
     filter: drop-shadow(-5px 5px 5px black);
-    z-index: -5;
 }
 
 .page-heading h1 {
