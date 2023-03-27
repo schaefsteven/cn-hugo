@@ -18,9 +18,10 @@ collections:
       - { label: 'Body', name: 'body', widget: 'markdown' }
   - name: 'links'
     label: 'Links'
+    label_singular: 'Link'
     folder: 'content/links'
     create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    slug: '{{slug}}'
     editor:
       preview: false
     fields:
