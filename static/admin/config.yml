@@ -27,7 +27,7 @@ collections:
     editor:
       preview: false
     fields:
-      - { label: 'Draft', name: 'draft', widget: 'boolean', required: 'false' }
+      - { label: 'Draft', name: 'draft', widget: 'boolean', required: false }
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Link', name: 'link', widget: 'string' }
       
