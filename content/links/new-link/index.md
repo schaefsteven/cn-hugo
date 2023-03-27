@@ -1,0 +1,4 @@
+---
+title: new link
+link: "#"
+---
