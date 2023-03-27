@@ -22,7 +22,8 @@ collections:
     label_singular: 'Link'
     folder: 'content/links'
     create: true
-    slug: '{{slug}}/index.md'
+    slug: 'index.md'
+    path: '{{slug}}'
     editor:
       preview: false
     fields:
