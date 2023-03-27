@@ -16,15 +16,17 @@ collections:
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+
   - name: 'links'
     label: 'Links'
     label_singular: 'Link'
     folder: 'content/links'
     create: true
-    slug: '{{slug}}'
+    slug: '{{slug}}/index.md'
     editor:
       preview: false
     fields:
+      - { label: 'Draft', name: 'draft', widget: 'boolean', required: 'false' }
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Link', name: 'link', widget: 'string' }
       
