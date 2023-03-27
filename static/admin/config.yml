@@ -17,6 +17,18 @@ collections:
       - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
 
+  - name: 'blog bundle'
+    label: 'Blog bundle'
+    folder: 'content/blog'
+    create: true
+    slug: '{{slug}}'
+    path: '{{slug}}/index'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+
   - name: 'links'
     label: 'Links'
     label_singular: 'Link'
