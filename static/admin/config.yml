@@ -18,6 +18,13 @@ collections:
       - { label: 'Body', name: 'body', widget: 'markdown' }
   - name: 'links'
     label: 'Links'
-    folder: 'content/
+    folder: 'content/links'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Link', name: 'link', widget: 'string' }
       
 # Todo: implement relative media storage via https://github.com/decaporg/decap-cms/issues/1472#issuecomment-503584397
