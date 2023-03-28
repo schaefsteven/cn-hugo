@@ -1,6 +1,6 @@
 ---
 title: CMS post with two images
-featuredimg: 6q4a4558
+featuredImg: 6q4a5583
 ---
 T﻿his is the first image. It has no alt text or title. 
 

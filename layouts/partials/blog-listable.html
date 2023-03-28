@@ -2,11 +2,11 @@
     <a href="{{ .RelPermalink }}">
         <div class="img-overlay-wrapper">
             <!-- Chooses an image based on these preferences:
-                a) from the blog post and has "featured" in the filename
+                a) from the blog post the name matches the Featured Image field
                 b) from the blog post, any images
                 c) the default blog image stored in the /assets directory
             -->
-            {{ $imgNamedFeatured := index (.Resources.Match "*.Params.featuredImg*") 0 }}
+            {{ $imgNamedFeatured := index (.Resources.Match (printf "*%s*" .Params.featuredImg)) 0 }}
             {{ $imgFromBlog := index (.Resources.ByType "image") 0 }}
             {{ $imgDefault := resources.Get "/images/default-blog-image.jpg" }}
             {{ $img := (($imgNamedFeatured | default $imgFromBlog) | default $imgDefault) }}
