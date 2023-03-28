@@ -23,13 +23,14 @@ collections:
     folder: 'content/links'
     create: true
     slug: '{{slug}}'
-    path: '{{slug}}/index'
     editor:
       preview: false
     fields:
       - { label: 'Draft', name: 'draft', widget: 'boolean', required: false }
-      - { label: 'Position', name: 'position', widget 'number', value_type: 'float', required: false }
+      - { label: 'Position', name: 'position', widget: 'number', value_type: 'float', required: false }
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Link', name: 'link', widget: 'string' }
+    summary: "{{position}} {{title}}"
+    sortable_fields: ['position', 'title', 'draft']
       
 # Todo: implement relative media storage via https://github.com/decaporg/decap-cms/issues/1472#issuecomment-503584397

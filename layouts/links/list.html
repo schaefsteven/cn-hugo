@@ -3,7 +3,7 @@
 {{ end }}
 {{ define "main" }}
     <section class="social-links">
-        {{ range .Pages }}
+        {{ range .Pages.ByParam "position" }}
             <a href="{{ .Params.link }}" target="_blank">{{ .Title }}</a>
         {{ end }}
     </section>
