@@ -6,7 +6,7 @@
                 b) from the blog post, any images
                 c) the default blog image stored in the /assets directory
             -->
-            {{ $imgNamedFeatured := index (.Resources.Match "*featured*") 0 }}
+            {{ $imgNamedFeatured := index (.Resources.Match "*.Params.featuredImg*") 0 }}
             {{ $imgFromBlog := index (.Resources.ByType "image") 0 }}
             {{ $imgDefault := resources.Get "/images/default-blog-image.jpg" }}
             {{ $img := (($imgNamedFeatured | default $imgFromBlog) | default $imgDefault) }}
