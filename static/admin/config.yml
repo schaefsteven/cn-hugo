@@ -11,6 +11,8 @@ collections:
     create: true
     slug: '{{slug}}'
     path: '{{slug}}/index'
+    media_folder: ''
+    public_folder: ''
     editor:
       preview: false
     fields:
