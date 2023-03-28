@@ -4,3 +4,5 @@ title = 'Common Nonsense'
 
 [markup.goldmark.renderer]
 unsafe = true
+
+timeZone = 'Europe/Oslo'
