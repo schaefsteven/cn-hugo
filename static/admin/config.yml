@@ -4,21 +4,9 @@ backend:
 media_folder: static/img
 public_folder: /img
 collections:
+
   - name: 'blog'
     label: 'Blog'
-    folder: 'content/blog'
-    create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
-    editor:
-      preview: false
-    fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Description', name: 'description', widget: 'string' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
-
-  - name: 'blog bundle'
-    label: 'Blog bundle'
     folder: 'content/blog'
     create: true
     slug: '{{slug}}'
@@ -40,6 +28,7 @@ collections:
       preview: false
     fields:
       - { label: 'Draft', name: 'draft', widget: 'boolean', required: false }
+      - { label: 'Position', name: 'position', widget 'number', value_type: 'float', required: false }
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Link', name: 'link', widget: 'string' }
       
