@@ -2,7 +2,7 @@
 title: This is a Blog Post
 date: 2023-03-01T09:52:19-06:00
 draft: false
-featuredImg: rocky
+featuredImg: 
 ---
 
 # This is a heading. 
