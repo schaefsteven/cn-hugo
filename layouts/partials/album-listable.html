@@ -2,8 +2,10 @@
     <a href="/discography/#{{ .Title }}">
         <div class="img-overlay-wrapper">
             <!-- Album art -->
-            {{ with .Resources.GetMatch "album-art*" }}
-                <img src="{{ .RelPermalink }}" alt="album art">
+            {{ $img := .Resources.GetMatch "album-art*" }}
+            {{ with $img }}
+                {{ $img := $img.Fill "650x650 Center" }}
+                <img src="{{ $img.RelPermalink }}" alt="album art">
             {{ end }}
             <div class="img-overlay">
                 <!-- Title -->
