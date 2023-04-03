@@ -349,6 +349,8 @@ footer a {
 /* Blog */
 
 .blog-article {
+    display: flex;
+    flex-direction: column;
     font-size: 1.2em;
     font-weight: 200;
     text-align: left;
@@ -406,11 +408,6 @@ footer a {
     text-indent: 1em;
 }
 
-.blog-article p:has(img) {
-    text-align: center;
-    text-indent: 0;
-}
-
 .blog-article em {
     font-style: italic;
 }
@@ -420,7 +417,9 @@ footer a {
 }
 
 .blog-article img {
+    margin: auto;
     width: auto;
+
     max-height: 650px;
     max-width: min(650px, 100%);
     padding: 1em 0;
