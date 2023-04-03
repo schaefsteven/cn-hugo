@@ -53,7 +53,7 @@ a {
 body {
     background-color: black;
     background-attachment: fixed;
-    background-image: url("../images/bg01-gradient-1440-comp75.jpg");
+    background-image: url("../images/bg.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: left bottom;
@@ -147,12 +147,11 @@ body {
     justify-content: center;
     height: 300px;
     max-height: min(20vh, 25vw);
-    padding: 2rem;
+    padding: 0.5rem 5% 0;
 }
 
 .page-heading img {
-    height: auto;
-    width: 30%;
+    max-height: 100%;
     filter: drop-shadow(-5px 5px 5px black);
 }
 

@@ -1,7 +1,9 @@
 {{ define "pre-main" }}
     {{"<!-- layouts/home.html -->" | safeHTML }}
     <div class="wrapper main-logo-wrapper">
-        <img src="../images/Common Nonsense Logo 1.0.png" 
+        {{ $img := resources.Get "images/cn-logo.webp" }}
+        {{ $img := $img.Resize "1000x" }}
+        <img src="{{ $img.RelPermalink }}" 
              alt="Common Nonsense Logo" 
              class="main-logo">
         <a class="icon" href="#MainWrapper">

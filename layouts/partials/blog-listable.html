@@ -10,7 +10,7 @@
             {{ $imgFromBlog := index (.Resources.ByType "image") 0 }}
             {{ $imgDefault := resources.Get "/images/default-blog-image.jpg" }}
             {{ $img := (($imgNamedFeatured | default $imgFromBlog) | default $imgDefault) }}
-            {{ $img := $img.Fill "650x433 Center" }}
+            {{ $img := $img.Fill "650x433 Center webp" }}
             <img src="{{ $img.RelPermalink }}" alt="">
             <div class="img-overlay">
                 <h3 class="big-heading">{{ .Title }}</h3>

@@ -4,7 +4,7 @@
             <!-- Album art -->
             {{ $img := .Resources.GetMatch "album-art*" }}
             {{ with $img }}
-                {{ $img := $img.Fill "650x650 Center" }}
+                {{ $img := $img.Fill "650x650 Center webp" }}
                 <img src="{{ $img.RelPermalink }}" alt="album art">
             {{ end }}
             <div class="img-overlay">
