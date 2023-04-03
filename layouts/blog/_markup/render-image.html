@@ -1,0 +1,3 @@
+{{ $img := .Page.Resources.Get .Destination }}
+{{ $img := $img.Fit "650x650" }}
+<img src="{{ $img.RelPermalink }}" alt="{{ .Text }}"/>
