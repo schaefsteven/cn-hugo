@@ -8,7 +8,7 @@
             -->
             {{ $imgNamedFeatured := index (.Resources.Match (printf "*%s*" .Params.featuredImg)) 0 }}
             {{ $imgFromBlog := index (.Resources.ByType "image") 0 }}
-            {{ $imgDefault := resources.Get "/images/default-blog-image.jpg" }}
+            {{ $imgDefault := resources.Get "/images/default-blog-image.webp" }}
             {{ $img := (($imgNamedFeatured | default $imgFromBlog) | default $imgDefault) }}
             {{ $img := $img.Fill "650x433 Center webp" }}
             <img src="{{ $img.RelPermalink }}" alt="">
