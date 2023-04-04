@@ -18,7 +18,7 @@
         </div>
     </a>
     <div class="summary">
-        {{ .Content | truncate 700 }}
+        {{ .Content | truncate 700 | safeHTML }}
         <div class="read-more">
             <a href="{{ .RelPermalink }}">read more</a>
         </div>

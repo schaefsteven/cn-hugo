@@ -181,7 +181,8 @@ div.summary {
     min-height: 5em;
 }
 
-.summary img {
+.summary img, 
+.summary iframe{
     display: none;
 }
 
@@ -415,15 +416,19 @@ footer a {
     font-weight: bold;
 }
 
-.blog-article img {
+.blog-article img,
+.blog-article iframe {
     margin: auto;
     width: auto;
-
     max-height: 650px;
     max-width: min(650px, 100%);
     padding: 1em 0;
 }
 
+.blog-article iframe {
+    width: 650px;
+    height: min(60vw, 433px);
+}
 
 
 /* Follow us */
