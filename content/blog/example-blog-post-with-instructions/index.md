@@ -1,7 +1,7 @@
 ---
 title: Example Blog Post with Instructions
 date: 2023-04-04T22:13:29.238Z
-draft: true
+draft: false
 featuredImg: 6q4a4624.jpg
 ---
 Welcome to the Common Nonsense Blog! This article serves to document the capabilities of this blog and show examples of the tools that are available to you. 
