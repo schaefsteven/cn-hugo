@@ -1,7 +1,7 @@
 ---
 title: "Test blog post. "
 date: 2023-04-04T20:16:17.014Z
-draft: true
+draft: false
 ---
 This is a test.
 
