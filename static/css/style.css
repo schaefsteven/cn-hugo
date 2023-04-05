@@ -75,6 +75,10 @@ body {
     background-color: var(--main-bg-color);
 }
 
+.listable h3 {
+    text-align: left;
+}
+
 
 .main-wrapper {
     margin: 0.5rem 1%;
@@ -380,7 +384,7 @@ footer a {
 
 .blog-article ul, 
 .blog-article ol{
-    line-height: 1.5em;
+    line-height: 2.5em;
     text-indent: 0.2em;
     margin-left: 2em;
 }
@@ -391,6 +395,10 @@ footer a {
 
 .blog-article ol {
     list-style-type: number;
+}
+
+.blog-article a {
+    color: var(--accent-main-bright);
 }
 
 .blog-article .blog-title {

@@ -12,7 +12,17 @@ The editing interface is not as forgiving as something like Google docs. Therefo
 
 When you create a new blog post, it defaults to being a **draft**. If the post is ready and you want it to be published on the website, flip the switch to take the post out of draft mode. 
 
+Clicking the "Publish" button in the top left doesn't actually publish the article if the "Draft" switch is still on, but it will save it so you can come back to it later or so someone else who has access can view and edit it. If you leave the page without clicking "Publish," your changes will be lost.
+
 The Publish Date will automatically be set to the date that the blog post was created. If you set the publish date to a date in the future, the blog post will not be published until that date. The site is currently not configured to rebuild automatically, so the post will not be visible until after the publish date and after a build is triggered. 
+
+It can take a bit of time for the article to show up on the website. It will take more time if you are uploading images as well. However if everything is working correctly, the website should update within 1-2 minutes for the average blog post. 
+
+If your blog post is not showing up on the site, check the following:
+
+1. Is the "Draft" switch set to off? 
+2. Is the "Publish Date" set to today or earlier?
+3. Did you click the "Publish" button in the top left? 
 
 # Basic text features
 
