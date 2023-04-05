@@ -16,29 +16,15 @@ The Publish Date will automatically be set to the date that the blog post was cr
 
 # Basic text features
 
-The text above is a heading, more specifically an h1. There are six levels of headings, represented below: 
+The text above is a heading, more specifically an h1. There are six levels of headings, but headings 2-6 all look the same on this website.
 
 ## Heading 2
-
-### Heading 3 
-
-#### Heading 4 
-
-##### Heading 5 
-
-###### Heading 6 
 
 **This text is bold.** 
 
 *This text is italicized.*
 
-`This is a code snippet.`
-
 [This is a link.](#)
-
-> This is a quote
->
-> And it can have multiple lines. 
 
 * This is a bulleted list
 * With multiple 
@@ -75,6 +61,6 @@ You can embed a YouTube video by copying the embed code and pasting it inline li
 
 To do this, go to the video's page, click "share", click "embed", click "copy" and then paste the code like you see above. 
 
+<br></br>
 
-
-If you have questions and aren't sure how to do something, Just contact Steven.
+If you have questions and aren't sure how to do something, just contact Steven.

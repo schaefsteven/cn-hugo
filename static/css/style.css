@@ -193,8 +193,8 @@ div.summary {
 .summary h5, 
 .summary h6 {
     font-weight: 500;
-    padding-bottom: 5px;
-    margin-bottom: 5px;
+    padding-bottom: 2px;
+    margin-top: 5px;
     display: block;
     width: max-content;
 }
@@ -375,7 +375,22 @@ footer a {
     font-family: var(--primary-body-font);
     font-size: 1.1em;
     padding: 1em 0;
-    font-weight: 400;
+    font-weight: 500;
+}
+
+.blog-article ul, 
+.blog-article ol{
+    line-height: 1.5em;
+    text-indent: 0.2em;
+    margin-left: 2em;
+}
+
+.blog-article ul {
+    list-style-type: disc;
+}
+
+.blog-article ol {
+    list-style-type: number;
 }
 
 .blog-article .blog-title {
