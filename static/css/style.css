@@ -386,7 +386,8 @@ footer a {
 .blog-article ol{
     line-height: 2.5em;
     text-indent: 0.2em;
-    margin-left: 2em;
+    margin-left: 2.5em;
+    margin-top: 0.5em;
 }
 
 .blog-article ul {
