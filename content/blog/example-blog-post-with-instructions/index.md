@@ -18,6 +18,8 @@ The Publish Date will automatically be set to the date that the blog post was cr
 
 It can take a bit of time for the article to show up on the website. It will take more time if you are uploading images as well. However if everything is working correctly, the website should update within 1-2 minutes for the average blog post. 
 
+Images are automatically resized to improve the performance of the website.
+
 If your blog post is not showing up on the site, check the following:
 
 1. Is the "Draft" switch set to off? 
