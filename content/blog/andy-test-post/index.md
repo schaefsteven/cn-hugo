@@ -1,7 +1,7 @@
 ---
 title: Andy Test post
 date: 2023-04-06T18:35:43.889Z
-draft: true
+draft: false
 featuredImg: IMG_1843
 ---
 Hi Im Andy.... 
