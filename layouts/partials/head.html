@@ -1,5 +1,5 @@
 <head>
-    <title>{{ .Site.Title }}</title>
+    <title>{{ if not .IsHome }}{{ .Page.Title }} - {{ end }}{{ .Site.Title }}</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="/css/normalize.css" rel="stylesheet">
@@ -10,6 +10,4 @@
     <link href="https://fonts.googleapis.com/css2?family=Overpass&family=Roboto+Slab:wght@300;400;500&display=swap" rel="stylesheet">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="/js/main.js"></script>
-    <!-- Decap CMS 
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script> -->
 </head>
