@@ -10,7 +10,7 @@ collections:
   - name: 'blog'
     label: 'Blog'
     folder: 'content/blog'
-    filter: {field: "title", value: "Blog"}
+    filter: {field: "title", value: "!Blog"}
     create: true
     slug: '{{slug}}'
     path: '{{slug}}/index'
