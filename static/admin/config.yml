@@ -21,7 +21,13 @@ collections:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Publish date', name: 'date', widget: 'datetime', time_format: false }
       - { label: 'Draft', name: 'draft', widget: 'boolean', default: true, required: false }
-      - { label: 'Featured Image', name: 'featuredImg', widget: 'string', required: false }
+      - { 
+          label: 'Featured Image', 
+          name: 'featuredImg', 
+          widget: 'string', 
+          required: false, 
+          hint: 'Use this field to choose which image will be shown in the preview of the blog post (on the home page and in the main blog section.) Simply copy and paste the file name of the image you wish to feature. \nIf no image is specified here, one of the images from the blog post will be chosen at random. If there are no images in the blog post, the default blog post image will be used.'
+        }
       - { label: 'Body', name: 'body', widget: 'markdown' }
 
   - name: 'links'
