@@ -330,6 +330,25 @@ footer a {
     filter: drop-shadow(-5px 5px 5px black);
 }
 
+.main-logo-wrapper h1 {
+    padding: 1em;
+    font-size: 1.2rem;
+    color: var(--accent-main-bright);
+    max-width: 300px;
+    text-transform: uppercase;
+    font-style: italic;
+    font-family: var(--primary-header-font);
+}
+
+.sr-only {
+    position: absolute;
+    left: -9999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
 .main-logo-wrapper {
     height: 75vh;
     height: 75svh;
