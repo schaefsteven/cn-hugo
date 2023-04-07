@@ -20,14 +20,24 @@ collections:
       preview: false
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Publish date', name: 'date', widget: 'datetime', time_format: false }
-      - { label: 'Draft', name: 'draft', widget: 'boolean', default: true, required: false }
-      - { 
-          label: 'Featured Image', 
+      - { label: 'Publish date', 
+          name: 'date', 
+          widget: 'datetime', 
+          time_format: false, 
+          hint: 'If the Publish Date is in the future, the blog post will not appear on the website until that date.'
+        }
+      - { label: 'Draft', 
+          name: 'draft', 
+          widget: 'boolean', 
+          default: true, 
+          required: false,
+          hint: '**Your post will not publish if this switch is on.** It is on by default. Turn it off in order to make your post go live.'
+        }
+      - { label: 'Featured Image', 
           name: 'featuredImg', 
           widget: 'string', 
           required: false, 
-          hint: 'Use this field to choose which image will be shown in the preview of the blog post (on the home page and in the main blog section.) Simply copy and paste the file name of the image you wish to feature. \nIf no image is specified here, one of the images from the blog post will be chosen at random. If there are no images in the blog post, the default blog post image will be used.'
+          hint: 'Use this field to choose which image will be shown in the preview of the blog post (on the home page and in the main blog section.) Simply copy and paste the file name of the image you wish to feature. If no image is specified here, one of the images from the blog post will be chosen at random. If there are no images in the blog post, the default blog post image will be used.'
         }
       - { label: 'Body', name: 'body', widget: 'markdown' }
       - { label: 'cmsVisible', name: 'cmsVisible', widget: 'hidden', default: true }
@@ -42,8 +52,20 @@ collections:
       preview: false
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Draft', name: 'draft', widget: 'boolean', default: true, required: false }
-      - { label: 'Position', name: 'position', widget: 'number', value_type: 'float', required: false }
+      - { label: 'Draft', 
+          name: 'draft', 
+          widget: 'boolean', 
+          default: true, 
+          required: false,
+          hint: '**Your link will not publish if this switch is on.** It is on by default. Turn it off in order to make your link go live.'
+        }
+      - { label: 'Position', 
+          name: 'position', 
+          widget: 'number', 
+          value_type: 'float', 
+          required: false,
+          hint: 'Use this to position your link in the list. Lower numbers move to the top of the list. You can use negative numbers and decimals.'
+        }
       - { label: 'Link', name: 'link', widget: 'string' }
     summary: "{{position}} {{title}}"
     sortable_fields: ['position', 'title', 'draft']
