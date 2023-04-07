@@ -2,6 +2,8 @@ backend:
   name: git-gateway
   branch: main # Branch to update (optional; defaults to master)
 media_folder: static/img
+media_library:
+  name: 'disabled' # To disable the media library
 public_folder: /img
 collections:
 
