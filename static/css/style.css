@@ -296,16 +296,16 @@ header {
     text-decoration: none;
     display: block;
     padding: .50em 0.25em 0.25em 0.25em;
-    border-radius: 0.25em;
     white-space: nowrap;
     overflow: hidden;
 }
 
-header li:last-child .nav-button {
+/*header li:last-child .nav-button {
+    border-radius: 0.25em;
     background-color: var(--accent-main-bright);
     color: black;
     font-weight: bold;
-}
+}*/
 
 
 footer {
