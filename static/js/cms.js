@@ -1,4 +1,4 @@
 CMS.registerMediaLibrary({
   name: 'disabled',
-  jinit: () => ({ show: () => undefined, enableStandalone: () => false }),
+  init: () => ({ show: () => undefined, enableStandalone: () => false }),
 });
