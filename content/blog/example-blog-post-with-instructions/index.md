@@ -1,7 +1,7 @@
 ---
 title: Example Blog Post with Instructions
 date: 2023-04-04T22:13:29.238Z
-draft: false
+draft: true
 featuredImg: 6q4a4624.jpg
 cmsVisible: true
 ---
