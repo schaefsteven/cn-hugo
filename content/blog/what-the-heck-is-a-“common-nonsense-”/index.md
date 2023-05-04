@@ -8,6 +8,8 @@ cmsVisible: true
 
 Common Nonsense consists of three standard Michigan dudes with a wide range of backgrounds. Andy (Me), grew up on the easternmost edge of the mitten state (The thumb knuckle) in a typical, lower-middle class home in America. With a metal head of a father and a sister who introduced me to Warped Tour when I was 14, there's no doubt in my head why I turned out the way that I have. 
 
+![](6q4a4609.jpg)
+
 Though Rocky and I have been friends for many years at this point, he will always be a bit of a mystery to all of us. He hails from the flattest and most cornfield-like part of the state, though rumors have it he was born behind a drum kit. If he’s not being an absolute animal behind the kit he's either in the studio making lo-fi beats or gaming somewhere in the Mario World. 
 
 Steven is the biggest outlier in the band, but by far the most knowledgeable. In fact he’s not only the engineer and producer of all the music we have released to this date but he also coded this website that you are on right now. Secluded from the world most of his childhood, he studied nothing but bible scripts and Underoath lyrics (are those the same thing?). 
